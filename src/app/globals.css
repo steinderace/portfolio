@@ -4,9 +4,23 @@
 
 @theme {
     /* Custom colours */
-    --color-bg-primary: #fffdf5;
+    --color-bg-primary: #fff8ee;
     --color-bg-primary-dark: #1a1a1a;
     --color-text-primary: #333333;
     --color-text-primary-dark: #ffffff;
     --color-accent: #dc2626;
+}
+
+/* Apply variables to body */
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
+}
+
+.dark body {
+    background-color: var(--color-bg-primary-dark);
+    color: var(--color-text-primary-dark);
 }
