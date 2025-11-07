@@ -4,7 +4,7 @@ import DarkModeButton from "@/components/DarkModeButton";
 export default function Header() {
   return (
     <header className="w-full flex justify-center mt-16">
-      <div className="flex flex-row items-center gap-128">
+      <div className="flex flex-col md:flex-row items-center md:gap-128 gap-16">
         {/* Title */}
         <div className={`${nithyaRanjana.className} text-5xl`}>
           सुशोभन शाक्य
