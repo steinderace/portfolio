@@ -1,6 +1,27 @@
 // @/ui/fonts.ts
-import { Alegreya_Sans, Alegreya_SC } from "next/font/google";
+import {
+  Alegreya_Sans,
+  Alegreya_SC,
+  Lato,
+  Saira,
+  Saira_Condensed,
+} from "next/font/google";
 import localFont from "next/font/local";
+
+export const saira = Saira({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export const sairaCondensed = Saira_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const nithyaRanjana = localFont({
   src: [
